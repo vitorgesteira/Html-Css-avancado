@@ -1,9 +1,34 @@
+/* Importação google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Css reset */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+.container{
+    margin: 0 auto;
+    background-color: #77ff00;
+}
+
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     body{
         background-color: #00ffff;  
+    }
+    /* Layout */
+    .container{
+        max-width: 540px;
     }
 }
 
@@ -12,6 +37,10 @@
     body{
         background-color: #ffff00;  
     }
+    /* Layout */
+    .container{
+        max-width: 720px;
+    }
 }
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -19,11 +48,19 @@
     body{
         background-color: #ff6600;  
     }
+    /* Layout */
+    .container{
+        max-width: 960px;
+    }
 }
 
 /* Pc >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){
     body{
         background-color: #ff0000;  
+    }
+    /* Layout */
+    .container{
+        max-width: 1140px;
     }
 }
