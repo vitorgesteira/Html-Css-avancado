@@ -171,6 +171,27 @@ main h2{
     border: 0;
 }
 
+/* wireframe */
+#wireframe{
+    padding: 90px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#textoWire{
+    color: white;
+    padding: 0px 10px;
+}
+
+#textoWire h2{
+    margin-bottom: 10px;
+}
+
+#textoWire p{
+    margin-bottom: 40px;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     /* Layout */
@@ -191,6 +212,10 @@ main h2{
     #video iframe{
         width: 560px;
         height: 315px;
+    }
+    /* wireframe */
+    #wireframe{
+        background-attachment: fixed;
     }
 
 }
@@ -219,6 +244,12 @@ main h2{
     #sobre{
         background-attachment: local;
     }
+
+    /* wireframe */
+     #wireframe{
+        background-attachment: local;
+    }
+    
 }
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -235,6 +266,11 @@ main h2{
 
     /* Sobre */
     #sobre{
+        background-attachment: fixed;
+    }
+
+    /* wireframe */
+    #wireframe{
         background-attachment: fixed;
     }
 }
@@ -296,9 +332,8 @@ main h2{
     }
 
     /* One page */
-        .flex3{
-            flex-direction: row;
-            align-items: center;
-        }
-
+    .flex3{
+        flex-direction: row;
+        align-items: center;
+    }
 }
