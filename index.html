@@ -8,7 +8,7 @@
     <title>HTML5 e CSS3 - One page site</title>
     <meta name="description" content="Site one page trabalhado no curso 
     de html e css avançado">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="img/banner1.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,16 +17,24 @@
     <header id="inicio">
         <div class="container flex">
             <div id="logo">
-                <img src="img/logo4.webp" alt="hal 9000">
+                <img src="img/logo5.webp" alt="hal 9000">
             </div>
             <nav>
                 <input type="checkbox" id="check">
                 <label for="check">&#x268C;</label>
                 <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#conteudo">Conteúdo</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li>
+                        <a href="#inicio" title="Inicio da pagina">Início</a>
+                    </li>
+                    <li>
+                        <a href="#sobre" title="Ir para o sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#conteudo" title="Ir para o conteudo">Conteúdo</a>
+                    </li>
+                    <li>
+                        <a href="#contato" title="Ir para contatos">Contato</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -38,7 +46,12 @@
             <h1>HTML5 e CSS3</h1>
             <h2>projeto one page usando html e css avançado.</h2>
             <!-- link de um video explicando sobre one page -->
-            <a href="" target="_blank" class="botao">Saiba +</a> 
+            <a href="" 
+            target="_blank" 
+            class="botao" 
+            title="ver mais sobre o projeto"
+            role="button"
+            >Saiba +</a> 
         </div>
     </main>
 
@@ -107,7 +120,12 @@
                     cores ou imagens. Clique no botão 
                     para obter o wireframe desta página.
                 </p>
-                <a href="wireframe.pdf" target="_blank" class="botao">PDF</a>
+                <a 
+                href="wireframe.pdf" 
+                target="_blank" 
+                class="botao"
+                title="Ver o pdf do wireframe"
+                role="button">PDF</a>
             </div>
         </div>
     </section>
@@ -126,7 +144,9 @@
                         partes conforme indicado neste cartão.
                     </p>
                     <a href="https://youtu.be/EUpLb_A8cTI" 
-                    target="_blank" class="botao">Saiba +</a>
+                    target="_blank" class="botao"
+                    title="Ver mais sobre HTML"
+                    role="button">Saiba +</a>
                 </div>
                 <div class="card">
                     <img src="/img/boxmodel.png" alt="Box model CSS">
@@ -137,7 +157,9 @@
                         dimensão do elemento.
                     </p>
                     <a href="https://youtu.be/dkbs-8ZRzZU" 
-                    target="_blank" class="botao">Saiba +</a>
+                    target="_blank" class="botao"
+                    title="Ver mais sobre Box Model"
+                    role="button">Saiba +</a>
                 </div>
                 <div class="card">
                     <img src="/img/breakpoints.png" alt="Box model CSS">
@@ -148,12 +170,14 @@
                         neste cartão.
                     </p>
                     <a href="https://youtu.be/BNngs0Zb5SE" 
-                    target="_blank" class="botao">Saiba +</a>
+                    target="_blank" class="botao"
+                    title="Ver mais sobre breakpoints"
+                    role="button">Saiba +</a>
                 </div>
             </div>  
             <div id="todos">
                 <a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqySIIlPJ-Qwo4f4HSuXVeWk"
-                target="_blank">
+                target="_blank" title="Conhecer todos os topicos">
                     Conheça todos >>
                 </a>
             </div>         
@@ -161,9 +185,67 @@
     </section>
 
     <!-- Rodape -->
-    <footer id="contato">
-        <div class="container">
-
+    <address>
+        <div class="container flex6">
+            <div id="contato">
+                <a href="https://api.whatsapp.com/send?phone=5571991820311"
+                target="_blank">
+                    <img src="img/whatsapp.png" alt="whatsapp"
+                    title="Abrir no whatsapp">
+                    <p>(71) 99182-0311</p>
+                </a>
+                <img src="img/fone.png" alt="fone">
+                <p>(71) 99182-0311</p>
+            </div>
+            <div id="endereco">
+                <a href="https://goo.gl/maps/VCmFPeSFkj3pSBpH9">
+                    <img src="img/mapa.png" alt="mapa" id="iconeMapa">
+                </a>
+                <img src="img/local.png" alt="local" id="iconeLocal">
+                <p>torre europa, Alameda Salvador, 1057 - 310 - 41820-790</p>
+                <p>Caminho das Árvores</p>
+                <p>Salvador - BA</p>
+                <a href="mailto:dev.vitorgesteira@email.com?subject=HTML5CSS3">
+                    <img src="img/email.png" alt="email" 
+                    title="Enviar E-mail">
+                    <p>dev.vitorgesteira@email.com</p>
+                </a>
+                <p id="dados">&#128064; Endereço e dados de ficticios</p>
+            </div>
+            <div id="googleMaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9245351535073!2d-38.45936139092986!3d-12.976678459855348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161bfce64f7c2d%3A0x8d355fdcd1358496!2sInfinity%20School!5e0!3m2!1spt-BR!2sbr!4v1685050331598!5m2!1spt-BR!2sbr" 
+                width="400" height="300" style="border:0;" allowfullscreen="" 
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </address>
+    <footer>
+        <div class="container flex5">
+            <div id="copyright">
+                <p>&#169; Vitor Gesteira Almeida</p>
+            </div>
+            <div id="social">
+                <a href="https://www.youtube.com/channel/UCePxbOFujxLqebxVoiKOq8A"
+                target="_blank">
+                    <img src="img/youtube.png" alt="youtube">
+                </a>
+                <a href="https://www.linkedin.com/in/vitor-gesteira/"
+                target="_blank">
+                    <img src="img/linkedin.png" alt="linkedin">
+                </a>
+                <a href="https://www.facebook.com/vitor.gesteira"
+                target="_blank">
+                    <img src="img/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/vitor_gesteira/"
+                target="_blank">
+                    <img src="img/instagram.png" alt="instagram">
+                </a>
+                <a href="https://twitter.com/gesteira_vitor"
+                target="_blank">
+                    <img src="img/twitter.png" alt="twitter">
+                </a>
+            </div>
         </div>
     </footer>
     <a href="#inicio" id="topo"><img src="img/topo.png" alt="topo do site"></a>
